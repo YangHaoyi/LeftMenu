@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yhy.leftmenu.leftmenu.LeftDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/leftDrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <com.yhy.leftmenu.customview.CircleImageView
+            android:id="@+id/openMenu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/open"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/test"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_1"/>
+        <ImageView
+            android:id="@+id/qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/qq" />
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:clipChildren="false"
+        >
+
+        <com.yhy.leftmenu.leftmenu.FlowingView
+            android:id="@+id/flowingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:id="@+id/container_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="25dp"
+            android:paddingRight="10dp"
+            />
+
+    </RelativeLayout>
+
+</com.yhy.leftmenu.leftmenu.LeftDrawerLayout>
